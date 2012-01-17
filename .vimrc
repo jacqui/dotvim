@@ -537,7 +537,8 @@ endif " has("autocmd")
 " --------------------
 
 " Switch syntax highlighting on, when the terminal has colors
-if (&t_Co > 2 || has("gui_running")) && has("syntax")
+" if (&t_Co > 2 || has("gui_running")) && has("syntax")
+if has("gui_running")
   function! s:initialize_font()
     if exists("&guifont")
       if has("mac")
