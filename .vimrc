@@ -3,6 +3,9 @@
 
 " Section: Options {{{1
 " ---------------------
+"
+let mapleader = ","
+
 if has("win32")
   let &runtimepath = substitute(&runtimepath,'\(\~\|tpope\)/vimfiles\>','\1/.vim','g')
 endif
@@ -54,7 +57,9 @@ set pastetoggle=<F2>
 set scrolloff=1
 set showcmd         " Show (partial) command in status line.
 set showmatch       " Show matching brackets.
+set ignorecase
 set smartcase       " Case insensitive searches become sensitive with capitals
+set gdefault        " Apply substitutions globally by default
 set smarttab        " sw at the start of the line, sts everywhere else
 if exists("+spelllang")
   set spelllang=en_us
@@ -297,6 +302,12 @@ if exists(":nohls")
 endif
 inoremap <C-C> <Esc>`^
 nnoremap zS  r<CR>ddkP=j
+
+nnoremap <leader><space> :noh<cr> " clear out highlights with ,<space> instead of :noh
+nnoremap <tab> %     " make the tab key match bracket pairs
+vnoremap <tab> %     " make the tab key match bracket pairs
+
+nnoremap <leader>v V`]  " reselect the text that was just pasted
 
 nnoremap =p m`=ap``
 nnoremap == ==
