@@ -37,9 +37,6 @@
 [submodule "bundle/gist-vim"]
   path = bundle/gist-vim
   url = https://github.com/mattn/gist-vim.git
-[submodule "bundle/vim-colors-solarized"]
-  path = bundle/vim-colors-solarized
-  url = git://github.com/altercation/vim-colors-solarized.git
 [submodule "bundle/vim-session"]
 	path = bundle/vim-session
 	url = https://github.com/xolox/vim-session.git
@@ -52,15 +49,12 @@
 [submodule "bundle/vim-bundler"]
 	path = bundle/vim-bundler
 	url = https://github.com/tpope/vim-bundler.git
-[submodule "bundle/tabular"]
-	path = bundle/tabular
-	url = https://github.com/godlygeek/tabular.git
 [submodule "vim-rake"]
 	path = vim-rake
 	url = git://github.com/tpope/vim-rake.git
 [submodule "bundle/vim-rake"]
 	path = bundle/vim-rake
 	url = git://github.com/tpope/vim-rake.git
-[submodule "bundle/vim-pasta"]
-	path = bundle/vim-pasta
-	url = git://github.com/sickill/vim-pasta.git
+[submodule "bundle/vim-ruby-doc"]
+	path = bundle/vim-ruby-doc
+	url = git://github.com/lucapette/vim-ruby-doc.git
