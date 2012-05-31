@@ -178,3 +178,7 @@ endfunction
 
 " NB: this supports "rp that replaces the selection by the contents of @r
 vnoremap <silent> <expr> p <sid>Repl()
+
+" for the vim-ruby-doc plugin https://github.com/lucapette/vim-ruby-doc
+let g:ruby_doc_command='open'
+
