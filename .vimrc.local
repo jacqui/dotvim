@@ -155,9 +155,8 @@ vmap <C-Down> ]egv
 nmap gV `[v`]
 
 "set background=dark title icon cmdheight=2 lines=45 columns=185 guioptions-=e
-colorscheme solarized
-set background=light
-let g:solarized_contrast="high"    "default value is normal
+colorscheme vibrantink
+set background=dark
 set guioptions-=tT
 syntax enable
 
