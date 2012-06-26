@@ -6,9 +6,6 @@
 "
 let mapleader = ","
 
-if has("win32")
-  let &runtimepath = substitute(&runtimepath,'\(\~\|tpope\)/vimfiles\>','\1/.vim','g')
-endif
 silent! call pathogen#runtime_append_all_bundles()
 silent! call pathogen#runtime_prepend_subdirectories("~/src/vim/bundle")
 
@@ -161,10 +158,6 @@ endif
 " Section: Commands {{{1
 " -----------------------
 
-if has("ruby")
-  silent! ruby require 'tpope'; require 'vim'
-endif
-
 if has("eval")
 command! -bar -nargs=1 E       :exe "edit ".substitute(<q-args>,'\(.*\):\(\d\+\):\=$','+\2 \1','')
 command! -bar -nargs=0 SudoW   :silent exe "write !sudo tee % >/dev/null"|silent edit!
@@ -186,7 +179,7 @@ function! Synname()
   endif
 endfunction
 
-command! -bar Invert :let &background = (&background=="light"?"dark":"light")
+"command! -bar Invert :let &background = (&background=="light"?"dark":"light")
 
 function! Fancy()
   if &number
