@@ -6,8 +6,8 @@
 "
 let mapleader = ","
 
-silent! call pathogen#runtime_append_all_bundles()
-silent! call pathogen#runtime_prepend_subdirectories("~/src/vim/bundle")
+execute pathogen#infect()
+
 
 set nocompatible
 set autoindent
