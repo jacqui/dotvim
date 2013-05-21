@@ -10,6 +10,9 @@ nmap <silent> <Leader>g :!/usr/local/bin/ctags -R --languages=Ruby,C,C++ -f .tag
 set tags=.tags
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y%{exists('g:loaded_rvm')?rvm#statusline():''}%=%-16(\ %l,%c-%v\ %)%P
 
+" \s on a word fills it in a search & replace
+nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
+
 set nu
 set nobackup
 set tabstop=2
