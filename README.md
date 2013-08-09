@@ -1,4 +1,21 @@
-This is a first cut of making some Vim related dotfile love. The idea is to use 
-Git to keep it all in check, and make it easy to fork and amend.
+# ~/.vim
 
-Use with love.  
+These are my vim dotfiles. While I wrote a small amount of the code here, it's mostly the work of the inimitable Tim Pope. I thank him for the vim-fu.
+
+## Setup 
+
+```
+cd
+git clone git@github.com:jacqui/dotvim.git .vim
+ln -s ~/.vim/.vimrc ~/.vimrc
+ln -s ~/.vim/.vimrc.local ~/.vimrc.local
+cd .vim
+git submodule init
+git submodule update
+```
+
+## Note
+
+I tried to keep my setup functional for both regular and gui versions of vim, but frankly they're best when used in macvim. 
+
+
