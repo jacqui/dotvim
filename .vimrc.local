@@ -1,9 +1,16 @@
+filetype off
+filetype plugin indent off
+set runtimepath+=$GOROOT/misc/vim
+filetype plugin indent on
+syntax on
+autocmd FileType go autocmd BufWritePre <buffer> Fmt
+
+
 " ruby 1.8 version
 iabbrev rde require 'ruby-debug'; Debugger.start; Debugger.settings[:autoeval] = 1; Debugger.settings[:autolist] = 1; debugger
 
 " ruby 1.9 version
 iabbrev rd require 'debugger'; Debugger.start; Debugger.settings[:autoeval] = 1; Debugger.settings[:autolist] = 1; debugger
-iabbrev debug require 'debugger'; Debugger.start; Debugger.settings[:autoeval] = 1; Debugger.settings[:autolist] = 1; debugger
 
 " tag it, exuberantly!
 nmap <silent> <Leader>g :!/usr/local/bin/ctags -R --languages=Ruby -f .tags --langmap='ruby:+.rake.builder.haml'<CR>
@@ -195,3 +202,8 @@ if executable('coffeetags')
         \ }
         \ }
 endif
+
+let g:Powerline_symbols = 'fancy'
+let g:hybrid_use_Xresources = 1
+colorscheme hybrid
+

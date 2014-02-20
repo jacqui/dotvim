@@ -576,7 +576,7 @@ if has("gui_running")
     "autocmd VimEnter *  set background=dark notitle noicon
     autocmd GUIEnter *  set background=dark title icon cmdheight=2 lines=45 columns=185 guioptions-=e
     autocmd GUIEnter *  if has("diff") && &diff | set columns=165 | endif
-    autocmd GUIEnter *  colorscheme vibrantink
+    autocmd GUIEnter *  colorscheme hybrid
     autocmd GUIEnter *  call s:initialize_font()
     autocmd Syntax css  syn sync minlines=50
     autocmd Syntax csh  hi link cshBckQuote Special | hi link cshExtVar PreProc | hi link cshSubst PreProc | hi link cshSetVariables Identifier
