@@ -12,6 +12,8 @@ iabbrev rde require 'ruby-debug'; Debugger.start; Debugger.settings[:autoeval] =
 " ruby 1.9 version
 iabbrev rd require 'debugger'; Debugger.start; Debugger.settings[:autoeval] = 1; Debugger.settings[:autolist] = 1; debugger
 
+iabbrev lg log.Println(
+
 " tag it, exuberantly!
 nmap <silent> <Leader>g :!/usr/local/bin/ctags -R --languages=Ruby -f .tags --langmap='ruby:+.rake.builder.haml'<CR>
 set tags=.tags
@@ -161,9 +163,9 @@ vmap <C-Down> ]egv
 nmap gV `[v`]
 
 "set background=dark title icon cmdheight=2 lines=45 columns=185 guioptions-=e
-colorscheme vividchalk
 set background=dark
 set guioptions-=tT
+
 syntax enable
 
 " command W w !sudo tee % > /dev/null
@@ -205,5 +207,5 @@ endif
 
 let g:Powerline_symbols = 'fancy'
 let g:hybrid_use_Xresources = 1
-colorscheme hybrid
 
+colorscheme hybrid
