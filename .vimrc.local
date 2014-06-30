@@ -3,7 +3,6 @@ filetype plugin indent off
 set runtimepath+=$GOROOT/misc/vim
 filetype plugin indent on
 syntax on
-autocmd FileType go autocmd BufWritePre <buffer> Fmt
 
 
 " ruby 1.8 version
@@ -207,5 +206,7 @@ endif
 
 let g:Powerline_symbols = 'fancy'
 let g:hybrid_use_Xresources = 1
+
+"let g:go_fmt_fail_silently = 1
 
 colorscheme hybrid
