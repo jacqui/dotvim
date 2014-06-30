@@ -1,6 +1,5 @@
 filetype off
 filetype plugin indent off
-set runtimepath+=$GOROOT/misc/vim
 filetype plugin indent on
 syntax on
 
@@ -207,6 +206,7 @@ endif
 let g:Powerline_symbols = 'fancy'
 let g:hybrid_use_Xresources = 1
 
-"let g:go_fmt_fail_silently = 1
+let g:go_bin_path = expand("~/go/bin")
+let g:go_fmt_fail_silently = 1
 
 colorscheme hybrid
